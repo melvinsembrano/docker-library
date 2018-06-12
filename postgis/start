@@ -10,7 +10,7 @@ if [ ! -d "${PGDATA}/base" ]; then
   sleep 1s
   psql -U postgres -d template1 -c "UPDATE pg_database SET datistemplate='false' WHERE datname IN ('template0', 'postgres');"
   psql -U postgres -d template1 -c "DROP DATABASE template0;"
-  psql -U postgres -d template1 -c "DROP DATABASE postgres;"
+  # psql -U postgres -d template1 -c "DROP DATABASE postgres;"
   psql -U postgres -d template1 -c "CREATE EXTENSION postgis;"
   psql -U postgres -d template1 -c "ALTER ROLE postgres WITH PASSWORD '${PGPASS}'"
   echo "local   all   all                md5" >  ${PGDATA}/pg_hba.conf
