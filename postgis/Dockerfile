@@ -1,7 +1,7 @@
 FROM alpine
 
 ENV LANG en_US.utf8
-ENV PGDATA /data
+ENV PGDATA /var/lib/postgresql/data
 ENV PGPASS postgres
 
 COPY start /sbin/
