@@ -11,17 +11,13 @@ or ready to run [PostgreSQL](https://hub.docker.com/r/lontongcorp/alpine-postgre
 Tags
 ----
 
-* `Latest`: PostGIS 2.3.0 - PostgreSQL 9.6.1
-* `2.3`   : PostGIS 2.3.0 - PostgreSQL 9.6.1
-* `2.3d`  : PostGIS 2.3.0 - PostgreSQL 9.5.4
-* `2.2u`  : PostGIS 2.2.2 - PostgreSQL 9.6.0
-* `2.2`   : PostGIS 2.2.2 - PostgreSQL 9.5.4
-
+* `Latest`: PostGIS 2.3.7 - PostgreSQL 9.6.9
+* `1.0.1`   : PostGIS 2.3.7 - PostgreSQL 9.6.9
 
 Run
 ---
 
-    docker run -d -it --restart unless-stopped -p 5432:5432 --name postgis lontongcorp/alpine-postgis
+    docker run -d -it --restart unless-stopped -p 5432:5432 --name postgis melvinsembrano/postgis
 
 
 Connect
