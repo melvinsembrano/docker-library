@@ -15,6 +15,6 @@ RUN cd /pastec/data \
   && curl http://pastec.io/files/visualWordsORB.tar.gz -o visualWordsORB.tar.gz \
   && tar zxf visualWordsORB.tar.gz && rm visualWordsORB.tar.gz
 
-EXPOSE 4212
+# EXPOSE 4212
 
 CMD ./pastec -p 4212 /pastec/data/visualWordsORB.dat
